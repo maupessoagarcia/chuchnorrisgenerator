@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
-async function jokeOfTurn() {
-  const cu = await fetch("https://api.chucknorris.io/jokes/random");
-  const buceta = await cu.json();
-  console.log(buceta.value);
-  return buceta.value;
-}
+// fetch("https://api.chucknorris.io/jokes/random");
 
 const Joke = () => {
-  return <div>Waaa</div>;
+  const [joke, setJoke] = useState();
+
+  const fetchJoke = () => {
+    fetch("https://api.chucknorris.io/jokes/random")
+      .then((res) => res.json())
+      .then((data) => setJoke(data.value));
+  };
+
+  useEffect(() => {
+    fetchJoke();
+  }, []);
+
+  return <div>{joke}</div>;
 };
 
 export default Joke;
