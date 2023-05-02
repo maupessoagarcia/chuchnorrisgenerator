@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/chuchnorrisgenerator/static/css/main.073c9b0a.css",
+    "main.js": "/chuchnorrisgenerator/static/js/main.ca3b984f.js",
+    "index.html": "/chuchnorrisgenerator/index.html",
+    "main.073c9b0a.css.map": "/chuchnorrisgenerator/static/css/main.073c9b0a.css.map",
+    "main.ca3b984f.js.map": "/chuchnorrisgenerator/static/js/main.ca3b984f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.ca3b984f.js"
+  ]
+}
